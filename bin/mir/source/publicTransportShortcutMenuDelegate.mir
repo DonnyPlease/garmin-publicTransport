@@ -1,0 +1,117 @@
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 5; ]
+class publicTransportShortcutMenuDelegate extends WatchUi.MenuInputDelegate{
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 10; ]
+    function initialize() as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_10_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 11 8 ]
+        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_10_26_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 14; ]
+    function onMenuItem(item as Symbol) as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_14_48_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 15 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_stmt:
+        %tmp.2 = lgetv %item;
+        %tmp.4 = const :item_1;
+        %tmp.5 = eq %tmp.2 %tmp.4;
+        bf %tmp.5 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_29_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 16 12 ]
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.8 = "item 1";
+        invoke %tmp.6 %tmp.7(%tmp.8);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_29_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_false:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 17 15 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_stmt:
+        %tmp.10 = lgetv %item;
+        %tmp.12 = const :item_2;
+        %tmp.13 = eq %tmp.10 %tmp.12;
+        bf %tmp.13 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 18 12 ]
+        %tmp.14 = getm $.Toybox.System;
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "item 2";
+        invoke %tmp.14 %tmp.15(%tmp.16);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_36_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_false:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 19 15 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_stmt:
+        %tmp.18 = lgetv %item;
+        %tmp.20 = const :item_3;
+        %tmp.21 = eq %tmp.18 %tmp.20;
+        bf %tmp.21 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 20 12 ]
+        %tmp.22 = getm $.Toybox.System;
+        %tmp.23 = getv function %tmp.22 :println;
+        %tmp.24 = "item 3";
+        invoke %tmp.22 %tmp.23(%tmp.24);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_36_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_false:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 21 15 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_stmt:
+        %tmp.26 = lgetv %item;
+        %tmp.28 = const :item_3;
+        %tmp.29 = eq %tmp.26 %tmp.28;
+        bf %tmp.29 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 22 12 ]
+        %tmp.30 = getm $.Toybox.System;
+        %tmp.31 = getv function %tmp.30 :println;
+        %tmp.32 = "item 4";
+        invoke %tmp.30 %tmp.31(%tmp.32);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_36_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_false:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 23 15 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_15_if_stmt:
+        %tmp.34 = lgetv %item;
+        %tmp.36 = const :item_3;
+        %tmp.37 = eq %tmp.34 %tmp.36;
+        bf %tmp.37 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_15_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 24 12 ]
+        %tmp.38 = getm $.Toybox.System;
+        %tmp.39 = getv function %tmp.38 :println;
+        %tmp.40 = "item 5";
+        invoke %tmp.38 %tmp.39(%tmp.40);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_36_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_23_15_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_21_15_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_19_15_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_17_15_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_15_8_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_14_48_stop:
+    }
+}
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 1; ]
+<init> {
+}
