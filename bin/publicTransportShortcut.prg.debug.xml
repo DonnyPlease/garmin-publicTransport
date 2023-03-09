@@ -99,102 +99,116 @@
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\Stops.mc" id="19" lineNum="94" parent="globals/Stops" pc="268437166" symbol="calculateClosestStops"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\Stops.mc" id="19" lineNum="95" parent="globals/Stops" pc="268437187" symbol="calculateClosestStops"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\Stops.mc" id="19" lineNum="96" parent="globals/Stops" pc="268437214" symbol="calculateClosestStops"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="20" lineNum="7" parent="globals/ChooseStopMenuDelegate" pc="268437217" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="21" lineNum="10" parent="globals/ChooseStopMenuDelegate" pc="268437236" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="21" lineNum="11" parent="globals/ChooseStopMenuDelegate" pc="268437238" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="22" lineNum="15" parent="globals/ChooseStopMenuDelegate" pc="268437257" symbol="onSelect"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="22" lineNum="17" parent="globals/ChooseStopMenuDelegate" pc="268437259" symbol="onSelect"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="22" lineNum="18" parent="globals/ChooseStopMenuDelegate" pc="268437286" symbol="onSelect"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="23" lineNum="5" parent="globals/mainView" pc="268437308" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="25" lineNum="14" parent="globals/mainView" pc="268437327" symbol="onLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="25" lineNum="15" parent="globals/mainView" pc="268437329" symbol="onLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="26" lineNum="36" parent="globals/mainView" pc="268437371" symbol="setPositionInfo"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="26" lineNum="37" parent="globals/mainView" pc="268437373" symbol="setPositionInfo"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="27" lineNum="9" parent="globals/mainView" pc="268437384" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="27" lineNum="10" parent="globals/mainView" pc="268437386" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="29" lineNum="25" parent="globals/mainView" pc="268437405" symbol="onUpdate"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="29" lineNum="27" parent="globals/mainView" pc="268437407" symbol="onUpdate"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="30" lineNum="20" parent="globals/Rez/Layouts" pc="268437428" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="30" lineNum="21" parent="globals/Rez/Layouts" pc="268437440" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="30" lineNum="23" parent="globals/Rez/Layouts" pc="268437594" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="31" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437611" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="32" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437630" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="32" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437632" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="32" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437650" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="20" lineNum="8" parent="globals/requestTimes" pc="268437217" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="20" lineNum="9" parent="globals/requestTimes" pc="268437219" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="21" lineNum="12" parent="globals/requestTimes" pc="268437230" symbol="makeRequest"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="21" lineNum="13" parent="globals/requestTimes" pc="268437234" symbol="makeRequest"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="21" lineNum="16" parent="globals/requestTimes" pc="268437242" symbol="makeRequest"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="21" lineNum="15" parent="globals/requestTimes" pc="268437242" symbol="makeRequest"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="21" lineNum="17" parent="globals/requestTimes" pc="268437257" symbol="makeRequest"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="22" lineNum="20" parent="globals/requestTimes" pc="268437260" symbol="digestData"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\requestTimes.mc" id="22" lineNum="22" parent="globals/requestTimes" pc="268437262" symbol="digestData"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="23" lineNum="7" parent="globals/ChooseStopMenuDelegate" pc="268437265" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="24" lineNum="10" parent="globals/ChooseStopMenuDelegate" pc="268437284" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="24" lineNum="11" parent="globals/ChooseStopMenuDelegate" pc="268437286" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="25" lineNum="15" parent="globals/ChooseStopMenuDelegate" pc="268437305" symbol="onSelect"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="25" lineNum="17" parent="globals/ChooseStopMenuDelegate" pc="268437307" symbol="onSelect"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\ChooseStopMenuDelegate.mc" id="25" lineNum="18" parent="globals/ChooseStopMenuDelegate" pc="268437334" symbol="onSelect"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="26" lineNum="5" parent="globals/mainView" pc="268437356" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="28" lineNum="14" parent="globals/mainView" pc="268437375" symbol="onLayout"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="28" lineNum="15" parent="globals/mainView" pc="268437377" symbol="onLayout"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="29" lineNum="36" parent="globals/mainView" pc="268437419" symbol="setPositionInfo"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="29" lineNum="37" parent="globals/mainView" pc="268437421" symbol="setPositionInfo"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="30" lineNum="9" parent="globals/mainView" pc="268437432" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="30" lineNum="10" parent="globals/mainView" pc="268437434" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="32" lineNum="25" parent="globals/mainView" pc="268437453" symbol="onUpdate"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="32" lineNum="27" parent="globals/mainView" pc="268437455" symbol="onUpdate"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="33" lineNum="20" parent="globals/Rez/Layouts" pc="268437476" symbol="MainLayout"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="33" lineNum="21" parent="globals/Rez/Layouts" pc="268437488" symbol="MainLayout"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="33" lineNum="23" parent="globals/Rez/Layouts" pc="268437642" symbol="MainLayout"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="34" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437659" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="35" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437678" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="35" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268437680" symbol="initialize"/>
+<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="35" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268437698" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="37" symbol="jsonFile"/>
+<entry field="true" id="41" symbol="jsonFile"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="8389346" symbol="text"/>
-<entry id="27" method="true" symbol="init"/>
-<entry id="18" method="true" symbol="setPosition"/>
+<entry id="28" method="true" symbol="init"/>
+<entry field="true" id="32" symbol="ids"/>
+<entry id="19" method="true" symbol="setPosition"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry id="7" module="true" symbol="globals/Rez/Menus"/>
-<entry id="32" method="true" symbol="MainLayout"/>
-<entry field="true" id="15" symbol="myViewDelegate"/>
-<entry id="16" method="true" symbol="onPosition"/>
+<entry id="36" method="true" symbol="MainLayout"/>
+<entry field="true" id="16" symbol="myViewDelegate"/>
+<entry id="17" method="true" symbol="onPosition"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry id="9" object="true" symbol="ChooseStopMenuDelegate"/>
 <entry id="8388649" module="true" object="true" symbol="Test"/>
-<entry field="true" id="14" symbol="myView"/>
-<entry field="true" id="34" symbol="AppName"/>
+<entry field="true" id="15" symbol="myView"/>
+<entry field="true" id="38" symbol="AppName"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
-<entry id="26" method="true" symbol="getClosestStops"/>
+<entry id="27" method="true" symbol="getClosestStops"/>
 <entry id="8389080" method="true" symbol="onMenu"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="11" object="true" symbol="mainView"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
-<entry field="true" id="36" symbol="prompt"/>
+<entry field="true" id="40" symbol="prompt"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
 <entry field="true" id="8389065" symbol="locY"/>
 <entry field="true" id="8389064" symbol="locX"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389348" symbol="font"/>
-<entry id="38" symbol="item_1"/>
-<entry id="21" module="true" symbol="Menus"/>
+<entry id="42" symbol="item_1"/>
+<entry id="22" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="13" object="true" symbol="publicTransportShortcutApp"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="8389349" symbol="justification"/>
-<entry id="23" method="true" symbol="calculateDistance"/>
+<entry id="24" method="true" symbol="calculateDistance"/>
+<entry id="33" method="true" symbol="makeRequest"/>
 <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="10" object="true" symbol="Stops"/>
+<entry id="8388637" module="true" symbol="Communications"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-<entry id="33" object="true" symbol="MainMenu"/>
-<entry field="true" id="24" symbol="closestStops"/>
+<entry id="37" object="true" symbol="MainMenu"/>
+<entry field="true" id="25" symbol="closestStops"/>
 <entry id="8388644" module="true" symbol="System"/>
 <entry id="12" object="true" symbol="mainViewDelegate"/>
 <entry id="8389619" method="true" symbol="onSelect"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8388640" module="true" symbol="Lang"/>
-<entry field="true" id="28" symbol="initialized"/>
+<entry field="true" id="29" symbol="initialized"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="31" symbol="LauncherIcon"/>
+<entry field="true" id="35" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry field="true" id="19" symbol="stops"/>
+<entry field="true" id="20" symbol="stops"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8388641" module="true" symbol="Math"/>
-<entry id="29" method="true" symbol="putLargestInFront"/>
+<entry id="30" method="true" symbol="putLargestInFront"/>
+<entry id="31" method="true" symbol="digestData"/>
+<entry id="14" object="true" symbol="requestTimes"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
-<entry id="22" method="true" symbol="calculateClosestStops"/>
+<entry id="23" method="true" symbol="calculateClosestStops"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry id="8389347" symbol="color"/>
-<entry field="true" id="17" symbol="positionInfo"/>
-<entry id="20" module="true" symbol="Layouts"/>
+<entry field="true" id="18" symbol="positionInfo"/>
+<entry id="21" module="true" symbol="Layouts"/>
 <entry id="8388642" module="true" symbol="Position"/>
 <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
 <entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="25" symbol="currentPosition"/>
+<entry field="true" id="26" symbol="currentPosition"/>
 <entry id="8388635" module="true" symbol="Application"/>
 <entry field="true" id="8389642" symbol="title"/>
-<entry id="30" method="true" symbol="setPositionInfo"/>
-<entry field="true" id="35" symbol="menu_label_1"/>
+<entry id="34" method="true" symbol="setPositionInfo"/>
+<entry field="true" id="39" symbol="menu_label_1"/>
 </symbolTable>
 <localVars>
 <entry arg="true" endPc="268435518" name="state" stackId="1" startPc="268435479"/>
@@ -228,12 +242,16 @@
 <entry endPc="268437216" name="closest_stops" stackId="6" startPc="268436770"/>
 <entry endPc="268436950" name="j" stackId="7" startPc="268436800"/>
 <entry endPc="268437165" name="j" stackId="8" startPc="268436966"/>
-<entry arg="true" endPc="268437307" name="item" stackId="1" startPc="268437257"/>
-<entry arg="true" endPc="268437370" name="dc" stackId="1" startPc="268437327"/>
-<entry arg="true" endPc="268437383" name="info" stackId="1" startPc="268437371"/>
-<entry arg="true" endPc="268437427" name="dc" stackId="1" startPc="268437405"/>
-<entry arg="true" endPc="268437610" name="dc" stackId="1" startPc="268437428"/>
-<entry endPc="268437610" name="rez_cmp_local_text_1785410126" stackId="2" startPc="268437440"/>
+<entry arg="true" endPc="268437229" name="arrayOfIds" stackId="1" startPc="268437217"/>
+<entry endPc="268437259" name="data" stackId="1" startPc="268437234"/>
+<entry endPc="268437259" name="stopsAndTimes" stackId="2" startPc="268437234"/>
+<entry arg="true" endPc="268437264" name="data" stackId="1" startPc="268437260"/>
+<entry arg="true" endPc="268437355" name="item" stackId="1" startPc="268437305"/>
+<entry arg="true" endPc="268437418" name="dc" stackId="1" startPc="268437375"/>
+<entry arg="true" endPc="268437431" name="info" stackId="1" startPc="268437419"/>
+<entry arg="true" endPc="268437475" name="dc" stackId="1" startPc="268437453"/>
+<entry arg="true" endPc="268437658" name="dc" stackId="1" startPc="268437476"/>
+<entry endPc="268437658" name="rez_cmp_local_text_4879699112" stackId="2" startPc="268437488"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -244,19 +262,20 @@
 </annotations>
 <dataEntryOffsetMappings>
 <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
-<dataEntry label="globals/publicTransportShortcutApp" offset="182" parentId="globals" symbolId="publicTransportShortcutApp" type="class"/>
-<dataEntry label="globals/mainViewDelegate" offset="277" parentId="globals" symbolId="mainViewDelegate" type="class"/>
-<dataEntry label="globals/Rez" offset="364" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry label="globals/Stops" offset="443" parentId="globals" symbolId="Stops" type="class"/>
-<dataEntry label="globals/ChooseStopMenuDelegate" offset="562" parentId="globals" symbolId="ChooseStopMenuDelegate" type="class"/>
-<dataEntry label="globals/mainView" offset="617" parentId="globals" symbolId="mainView" type="class"/>
-<dataEntry label="globals/Rez/Drawables" offset="712" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry label="globals/Rez/Layouts" offset="751" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry label="globals/Rez/Menus" offset="790" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry label="globals/Rez/Fonts" offset="829" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry label="globals/Rez/Strings" offset="860" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="915" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry label="globals/Rez/Menus/MainMenu" offset="954" parentId="Menus" symbolId="MainMenu" type="class"/>
+<dataEntry label="globals/publicTransportShortcutApp" offset="190" parentId="globals" symbolId="publicTransportShortcutApp" type="class"/>
+<dataEntry label="globals/mainViewDelegate" offset="285" parentId="globals" symbolId="mainViewDelegate" type="class"/>
+<dataEntry label="globals/Rez" offset="372" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry label="globals/Stops" offset="451" parentId="globals" symbolId="Stops" type="class"/>
+<dataEntry label="globals/requestTimes" offset="570" parentId="globals" symbolId="requestTimes" type="class"/>
+<dataEntry label="globals/ChooseStopMenuDelegate" offset="641" parentId="globals" symbolId="ChooseStopMenuDelegate" type="class"/>
+<dataEntry label="globals/mainView" offset="696" parentId="globals" symbolId="mainView" type="class"/>
+<dataEntry label="globals/Rez/Drawables" offset="791" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry label="globals/Rez/Layouts" offset="830" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry label="globals/Rez/Menus" offset="869" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry label="globals/Rez/Fonts" offset="908" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry label="globals/Rez/Strings" offset="939" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="994" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/Menus/MainMenu" offset="1033" parentId="Menus" symbolId="MainMenu" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="publicTransportShortcutApp" startPc="268435460">
@@ -330,37 +349,51 @@
 <functionEntry accessMode="public" endPc="268437216" name="calculateClosestStops" parent="Stops" startPc="268436766">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437235" name="&lt;init&gt;" parent="ChooseStopMenuDelegate" startPc="268437217">
+<functionEntry accessMode="public" name="&lt;init&gt;" parent="requestTimes">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437256" name="initialize" parent="ChooseStopMenuDelegate" startPc="268437236">
+<functionEntry accessMode="public" endPc="268437229" name="initialize" parent="requestTimes" startPc="268437217">
+<param id="arrayOfIds"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437307" name="onSelect" parent="ChooseStopMenuDelegate" startPc="268437257">
+<functionEntry accessMode="public" endPc="268437259" name="makeRequest" parent="requestTimes" startPc="268437230">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437264" name="digestData" parent="requestTimes" startPc="268437260">
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437283" name="&lt;init&gt;" parent="ChooseStopMenuDelegate" startPc="268437265">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437304" name="initialize" parent="ChooseStopMenuDelegate" startPc="268437284">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" endPc="268437355" name="onSelect" parent="ChooseStopMenuDelegate" startPc="268437305">
 <param id="item"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437326" name="&lt;init&gt;" parent="mainView" startPc="268437308">
+<functionEntry accessMode="public" endPc="268437374" name="&lt;init&gt;" parent="mainView" startPc="268437356">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onShow" parent="mainView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437370" name="onLayout" parent="mainView" startPc="268437327">
+<functionEntry accessMode="public" endPc="268437418" name="onLayout" parent="mainView" startPc="268437375">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437383" name="setPositionInfo" parent="mainView" startPc="268437371">
+<functionEntry accessMode="public" endPc="268437431" name="setPositionInfo" parent="mainView" startPc="268437419">
 <param id="info"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437404" name="initialize" parent="mainView" startPc="268437384">
+<functionEntry accessMode="public" endPc="268437452" name="initialize" parent="mainView" startPc="268437432">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="onHide" parent="mainView">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437427" name="onUpdate" parent="mainView" startPc="268437405">
+<functionEntry accessMode="public" endPc="268437475" name="onUpdate" parent="mainView" startPc="268437453">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
@@ -382,14 +415,14 @@
 <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437610" name="MainLayout" parent="Layouts" startPc="268437428">
+<functionEntry accessMode="public" endPc="268437658" name="MainLayout" parent="Layouts" startPc="268437476">
 <param id="dc"/>
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437629" name="&lt;init&gt;" parent="MainMenu" startPc="268437611">
+<functionEntry accessMode="public" endPc="268437677" name="&lt;init&gt;" parent="MainMenu" startPc="268437659">
 <documentation/>
 </functionEntry>
-<functionEntry accessMode="public" endPc="268437706" name="initialize" parent="MainMenu" startPc="268437630">
+<functionEntry accessMode="public" endPc="268437754" name="initialize" parent="MainMenu" startPc="268437678">
 <documentation/>
 </functionEntry>
 </functions>

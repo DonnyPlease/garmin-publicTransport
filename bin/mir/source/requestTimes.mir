@@ -1,0 +1,57 @@
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 1; ]
+using Toybox.System;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 2; ]
+using Toybox.Communications;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 4; ]
+class requestTimes{
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 6; @position = 8; ]
+    var ids;
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 8; ]
+    function initialize(arrayOfIds) as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_8_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 9 8 ]
+        %tmp.2 = lgetv %arrayOfIds;
+        putv self :ids %tmp.2;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_8_36_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 12; ]
+    function makeRequest() {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 13 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_stop" ]
+        %data.1 = local;
+        %tmp.1 = newa 0;
+        lputv %data.1 %tmp.1;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 15 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_stop" ]
+        %stopsAndTimes.2 = local;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 16 8 ]
+        %tmp.2 = self;
+        %tmp.3 = getv function %tmp.2 :digestData;
+        %tmp.5 = lgetv %data.1;
+        %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.5);
+        lputv %stopsAndTimes.2 %tmp.6;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 17 8 ]
+        %tmp.8 = lgetv %stopsAndTimes.2;
+        ret %tmp.8;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_12_26_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 20; ]
+    function digestData(data) {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_20_29_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc" 22 8 ]
+        %tmp.2 = lgetv %data;
+        ret %tmp.2;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_requestTimes_mc_20_29_stop:
+    }
+}
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\requestTimes.mc"; @line = 1; ]
+<init> {
+}
