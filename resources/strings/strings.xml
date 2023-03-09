@@ -1,11 +1,7 @@
 <strings>
     <string id="AppName">publicTransportShortcut</string>
 
-    <string id="prompt">Choose a stop</string>
+    <string id="prompt">Click</string>
 
     <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
-    <string id="menu_label_3">Item 3</string>
-    <string id="menu_label_4">Item 4</string>
-    <string id="menu_label_5">Item 5</string>
 </strings>

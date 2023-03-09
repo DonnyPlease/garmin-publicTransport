@@ -1,0 +1,47 @@
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 4; ]
+using Toybox.Position;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 7; ]
+class ChooseStopMenuDelegate extends WatchUi.Menu2InputDelegate{
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 10; ]
+    function initialize() as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_10_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 11 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_10_26_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 15; ]
+    function onSelect(item as WatchUi.MenuItem) as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_15_56_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 17 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = lgetv %item;
+        %tmp.4 = getv function %tmp.3 :getId;
+        %tmp.5 = invoke %tmp.3 %tmp.4();
+        invoke %tmp.1 %tmp.2(%tmp.5);
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 18 8 ]
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.8 = "Your mother!!";
+        invoke %tmp.6 %tmp.7(%tmp.8);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_15_56_stop:
+    }
+}
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

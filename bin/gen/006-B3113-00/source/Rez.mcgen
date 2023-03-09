@@ -18,9 +18,9 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_2502291781 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>((240 - dc.getFontHeight(Graphics.FONT_MEDIUM)) * 0.5), :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+            var rez_cmp_local_text_4380002471 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>((240 - dc.getFontHeight(Graphics.FONT_MEDIUM)) * 0.5), :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
-            return [rez_cmp_local_text_2502291781] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_4380002471] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

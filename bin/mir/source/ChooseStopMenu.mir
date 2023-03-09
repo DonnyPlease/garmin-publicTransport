@@ -1,0 +1,38 @@
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 6; ]
+class ChooseStopMenuDelegate extends WatchUi.Menu2InputDelegate{
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 6; ]
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 6; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 10; ]
+    function initialize() as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenu_mc_10_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc" 11 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenu_mc_10_26_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 15; ]
+    function onSelect(item as WatchUi.MenuItem) as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenu_mc_15_56_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc" 17 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Your mother!!";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenu_mc_15_56_stop:
+    }
+}
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenu.mc"; @line = 1; ]
+<init> {
+}

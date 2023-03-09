@@ -5,7 +5,7 @@ import Toybox.System;
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 3; ]
 import Toybox.WatchUi;
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 5; ]
-class publicTransportShortcutMenuDelegate extends WatchUi.MenuInputDelegate{
+class publicTransportShortcutMenuDelegate extends WatchUi.Menu2InputDelegate{
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc"; @line = 5; ]
     <init> {
     }
@@ -17,7 +17,7 @@ class publicTransportShortcutMenuDelegate extends WatchUi.MenuInputDelegate{
     function initialize() as Void {
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_10_26_start:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutMenuDelegate.mc" 11 8 ]
-        %tmp.2 = getv ? :MenuInputDelegate;
+        %tmp.2 = getv ? :Menu2InputDelegate;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutMenuDelegate_mc_10_26_stop:

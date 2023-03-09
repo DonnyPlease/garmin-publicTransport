@@ -2,28 +2,30 @@
 import Toybox.Graphics;
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 2; ]
 import Toybox.WatchUi;
-[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 4; ]
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 3; ]
+import Toybox.Position;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 5; ]
 class publicTransportShortcutView extends WatchUi.View{
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 4; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 5; ]
     <init> {
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 4; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 5; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 6; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 7; ]
     function initialize() as Void {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_6_26_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 7 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_7_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 8 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_6_26_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_7_26_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 11; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 12; ]
     function onLayout(dc as Dc) as Void {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_11_40_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 12 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_12_40_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 13 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -32,22 +34,22 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTrans
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_11_40_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_12_40_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 18; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 19; ]
     function onShow() as Void {
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 22; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 23; ]
     function onUpdate(dc as Dc) as Void {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_22_40_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 24 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_23_40_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc" 25 8 ]
         %tmp.2 = getv ? :View;
         %tmp.3 = getv function %tmp.2 :onUpdate;
         %tmp.5 = lgetv %dc;
         invoke %tmp.2 %tmp.3(%tmp.5);
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_22_40_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutView_mc_23_40_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 30; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutView.mc"; @line = 31; ]
     function onHide() as Void {
     }
 }

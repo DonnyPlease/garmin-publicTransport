@@ -1,7 +1,10 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
+import Toybox.Position;
 
-class publicTransportShortcutView extends WatchUi.View {
+class mainView extends WatchUi.View {
+
+    var positionInfo;
 
     function initialize() {
         View.initialize();
@@ -28,6 +31,10 @@ class publicTransportShortcutView extends WatchUi.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() as Void {
+    }
+
+    function setPositionInfo(info){
+        positionInfo = info;
     }
 
 }
