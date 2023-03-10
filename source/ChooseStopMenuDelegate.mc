@@ -13,6 +13,7 @@ class ChooseStopMenuDelegate extends WatchUi.Menu2InputDelegate {
     }
 
     // What happens when an item is selected.
+    (:typecheck(false))
     function onSelect(item as WatchUi.MenuItem) as Void {
         var name = item.getId();
         var infoBoard = Application.getApp().myViewDelegate.getDepartureBoard(name);

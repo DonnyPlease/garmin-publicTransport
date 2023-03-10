@@ -22,6 +22,7 @@ class Stops {
 
 
     // A constructor
+    (:typecheck(false))
     function initialize(){
         stops = Application.loadResource(Rez.JsonData.jsonFile);
         stops = stops["stops"];
@@ -48,6 +49,7 @@ class Stops {
     }
 
     // This function calculates and returns which stops are closest to hte current location.
+    (:typecheck(false))
     function calculateClosestStops(){
 
         var n = 5;  // Number of stops we want to return.
@@ -108,6 +110,7 @@ class Stops {
     // Simple bubbling algorithm to put the largest element in the beggining of the array. In our case,
     // where we pass an array that is in descending order, except the last element, it is enough to traverse it once
     // to put the array in descending order.
+    (:typecheck(false))
     function putLargestInFront(array){
         var size = array.size();
         for (var i = size-1; i > 0; i-=1){

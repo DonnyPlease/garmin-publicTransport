@@ -71,8 +71,6 @@ class APIrequest {
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON  // set response type to Json
         };
 
-        var responseCallback = method(:onReceive);                  // set responseCallback to onReceive() method
-
         Communications.makeWebRequest(url, params, options, method(:onReceive));  // Put it all together and make
                                                                                   // the request. 
     }
@@ -80,6 +78,7 @@ class APIrequest {
     // Digest data because the data come in some specific format. It is already a dictionary, but it contains too much
     // (for us) useless information. We only need names of the lines, name of their destination and predicted times
     // of departure.
+    (:typecheck(false))
     function digestData(data){
         data = data["departures"];  // Select departures - now data should be an array of departures.
         var size = data.size();  // Save size.

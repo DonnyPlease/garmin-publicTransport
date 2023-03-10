@@ -18,11 +18,12 @@ class mainViewDelegate extends WatchUi.BehaviorDelegate {
         departureBoards.put(name, depBoard);
     }
 
+    (:typecheck(false))
     function getDepartureBoard(name){
         return departureBoards[name];
     }
 
-
+    (:typecheck(false))
     function onSelect() {
         var ChooseStopMenu = new WatchUi.Menu2({:title=>"Choose a stop"});
         var delegate;
