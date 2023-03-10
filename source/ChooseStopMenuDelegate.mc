@@ -17,9 +17,11 @@ class ChooseStopMenuDelegate extends WatchUi.Menu2InputDelegate {
     function onSelect(item as WatchUi.MenuItem) as Void {
         var name = item.getId();
         var infoBoard = Application.getApp().myViewDelegate.getDepartureBoard(name);
+        if (infoBoard == null) {
+            return;
+        }
         var size = infoBoard.size();
-
-        var ChooseLineMenu = new WatchUi.Menu2({:title=>"Infoboard"});
+        var ChooseLineMenu = new WatchUi.Menu2({:title=>name});
         var delegate;
 
         System.println(name);

@@ -22,9 +22,9 @@ class publicTransportShortcutApp extends Application.AppBase{
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 10; @position = 8; ]
     var myViewDelegate;
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 11; @position = 8; ]
-    var rawInfoboard;
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 12; @position = 8; ]
     var infoBoard;
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 12; @position = 8; ]
+    var myLocation;
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 16; ]
     function initialize() as Void {
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_16_26_start:
@@ -57,7 +57,7 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTrans
         %tmp.1 = getm $.Toybox.Position;
         %tmp.2 = getv function %tmp.1 :enableLocationEvents;
         %tmp.3 = getm $.Toybox.Position;
-        %tmp.4 = getv %tmp.3 :LOCATION_CONTINUOUS;
+        %tmp.4 = getv %tmp.3 :LOCATION_ONE_SHOT;
         %tmp.5 = self;
         %tmp.6 = getv function %tmp.5 :method;
         %tmp.8 = const :onPosition;
@@ -105,75 +105,64 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTrans
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 50; ]
     function onPosition(info as Toybox.Position.Info) as Void {
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_50_62_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 51 8 ]
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_8_if_stmt:
-        %tmp.1 = lgetv %info;
-        %tmp.2 = getv %tmp.1 :position;
-        %tmp.3 = null;
-        %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_8_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_8_if_true:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_35_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 52 12 ]
-        ret ?;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_35_stop:
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_8_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_51_8_if_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 54 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_50_62_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_50_62_stop" ]
-        %myLocation.1 = local;
-        %tmp.5 = lgetv %info;
-        %tmp.6 = getv %tmp.5 :position;
-        %tmp.7 = getv function %tmp.6 :toDegrees;
-        %tmp.8 = invoke %tmp.6 %tmp.7();
-        lputv %myLocation.1 %tmp.8;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 55 8 ]
-        %tmp.10 = getv ? :myView;
-        %tmp.11 = getv function %tmp.10 :setPositionInfo;
-        %tmp.13 = lgetv %info;
-        invoke %tmp.10 %tmp.11(%tmp.13);
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "something is happening";
+        invoke %tmp.1 %tmp.2(%tmp.3);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 56 8 ]
-        %tmp.15 = getv ? :myViewDelegate;
-        %tmp.16 = getv function %tmp.15 :setPosition;
-        %tmp.18 = lgetv %info;
-        invoke %tmp.15 %tmp.16(%tmp.18);
+        %tmp.4 = lgetv %info;
+        %tmp.5 = getv %tmp.4 :position;
+        %tmp.6 = getv function %tmp.5 :toDegrees;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        putv self :myLocation %tmp.7;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 57 8 ]
-        %tmp.20 = getv ? :myViewDelegate;
-        %tmp.21 = getv %tmp.20 :stops;
-        %tmp.22 = getv function %tmp.21 :init;
-        %tmp.24 = lgetv %info;
-        invoke %tmp.21 %tmp.22(%tmp.24);
+        %tmp.9 = getv ? :myView;
+        %tmp.10 = getv function %tmp.9 :setPositionInfo;
+        %tmp.12 = lgetv %info;
+        invoke %tmp.9 %tmp.10(%tmp.12);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 58 8 ]
-        %tmp.25 = getm $.Toybox.System;
-        %tmp.26 = getv function %tmp.25 :println;
-        %tmp.27 = "Latitude: ";
-        %tmp.29 = lgetv %myLocation.1;
-        %tmp.30 = 0;
-        %tmp.31 = agetv %tmp.29 %tmp.30;
-        %tmp.32 = add %tmp.27 %tmp.31;
-        invoke %tmp.25 %tmp.26(%tmp.32);
+        %tmp.14 = getv ? :myViewDelegate;
+        %tmp.15 = getv function %tmp.14 :setPosition;
+        %tmp.17 = lgetv %info;
+        invoke %tmp.14 %tmp.15(%tmp.17);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 59 8 ]
-        %tmp.33 = getm $.Toybox.System;
-        %tmp.34 = getv function %tmp.33 :println;
-        %tmp.35 = "Longitude: ";
-        %tmp.37 = lgetv %myLocation.1;
-        %tmp.38 = 1;
-        %tmp.39 = agetv %tmp.37 %tmp.38;
-        %tmp.40 = add %tmp.35 %tmp.39;
-        invoke %tmp.33 %tmp.34(%tmp.40);
+        %tmp.19 = getv ? :myViewDelegate;
+        %tmp.20 = getv %tmp.19 :stops;
+        %tmp.21 = getv function %tmp.20 :init;
+        %tmp.23 = lgetv %info;
+        invoke %tmp.20 %tmp.21(%tmp.23);
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 60 8 ]
+        %tmp.24 = getm $.Toybox.System;
+        %tmp.25 = getv function %tmp.24 :println;
+        %tmp.26 = "Latitude: ";
+        %tmp.28 = getv ? :myLocation;
+        %tmp.29 = 0;
+        %tmp.30 = agetv %tmp.28 %tmp.29;
+        %tmp.31 = add %tmp.26 %tmp.30;
+        invoke %tmp.24 %tmp.25(%tmp.31);
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 61 8 ]
+        %tmp.32 = getm $.Toybox.System;
+        %tmp.33 = getv function %tmp.32 :println;
+        %tmp.34 = "Longitude: ";
+        %tmp.36 = getv ? :myLocation;
+        %tmp.37 = 1;
+        %tmp.38 = agetv %tmp.36 %tmp.37;
+        %tmp.39 = add %tmp.34 %tmp.38;
+        invoke %tmp.32 %tmp.33(%tmp.39);
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_50_62_stop:
     }
 }
-[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 69; ]
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 71; ]
 function getApp() as publicTransportShortcutApp {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_69_48_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 70 4 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_71_48_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc" 72 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 publicTransportShortcutApp;
     ret %tmp.4;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_69_48_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_publicTransportShortcutApp_mc_71_48_stop:
 }
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\publicTransportShortcutApp.mc"; @line = 1; ]
 <init> {

@@ -45,7 +45,7 @@ module Rez {
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_bin_gen_006_B2988_00_source_Rez_mcgen_20_74_start:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\bin\gen\006-B2988-00\source\Rez.mcgen" 21 12 ]
             [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_bin_gen_006_B2988_00_source_Rez_mcgen_20_74_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_bin_gen_006_B2988_00_source_Rez_mcgen_20_74_stop" ]
-            %rez_cmp_local_text_5375996271.1 = local;
+            %rez_cmp_local_text_1215837231.1 = local;
             %tmp.3 = getm $.Toybox.WatchUi;
             %tmp.4 = getv function ? %tmp.3 :Text;
             %tmp.5 = newd 6;
@@ -90,10 +90,10 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_bin_gen_006_B2988_
             %tmp.50 = dup %tmp.45;
             %tmp.51 = aputv %tmp.50 %tmp.47 %tmp.49;
             %tmp.1 = newc %tmp.4 (%tmp.51);
-            lputv %rez_cmp_local_text_5375996271.1 %tmp.1;
+            lputv %rez_cmp_local_text_1215837231.1 %tmp.1;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\bin\gen\006-B2988-00\source\Rez.mcgen" 23 12 ]
             %tmp.52 = newa Array<WatchUi.Drawable> 1;
-            %tmp.54 = lgetv %rez_cmp_local_text_5375996271.1;
+            %tmp.54 = lgetv %rez_cmp_local_text_1215837231.1;
             %tmp.55 = dup %tmp.52;
             %tmp.56 = aputv %tmp.55 0 %tmp.54;
             ret %tmp.56;

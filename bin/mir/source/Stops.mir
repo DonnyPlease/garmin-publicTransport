@@ -3,43 +3,46 @@ import Toybox.Application;
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 2; ]
 using Toybox.Math;
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 3; ]
-using Toybox.Test;
-[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 4; ]
 using Toybox.System;
-[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 8; ]
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 7; ]
 class Stops{
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 7; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 11; @position = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 10; @position = 8; ]
     var currentPosition;
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 12; @position = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 11; @position = 8; ]
     var stops;
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 17; @position = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 16; @position = 8; ]
     var initialized = false;
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 21; @position = 8; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 20; @position = 8; ]
     var closestStops;
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 25; typecheck = false; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 24; typecheck = false; ]
     function initialize() as Void {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_26_25_start:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_25_25_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 26 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Now loading!";
+        invoke %tmp.1 %tmp.2(%tmp.3);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 27 8 ]
-        %tmp.1 = getm $.Toybox.Application;
-        %tmp.2 = getv function %tmp.1 :loadResource;
-        %tmp.4 = getv ? :Rez;
-        %tmp.5 = getv %tmp.4 :JsonData;
-        %tmp.6 = getv %tmp.5 :jsonFile;
-        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
-        putv self :stops %tmp.7;
+        %tmp.4 = getm $.Toybox.Application;
+        %tmp.5 = getv function %tmp.4 :loadResource;
+        %tmp.7 = getv ? :Rez;
+        %tmp.8 = getv %tmp.7 :JsonData;
+        %tmp.9 = getv %tmp.8 :jsonFile;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.9);
+        putv self :stops %tmp.10;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 28 8 ]
-        %tmp.9 = getv ? :stops;
-        %tmp.10 = "stops";
-        %tmp.11 = agetv %tmp.9 %tmp.10;
-        putv self :stops %tmp.11;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_26_25_stop:
+        %tmp.12 = getv ? :stops;
+        %tmp.13 = "stops";
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        putv self :stops %tmp.14;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_25_25_stop:
     }
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 33; ]
     function init(positionInfo) {
@@ -66,78 +69,81 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_35
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 41 12 ]
         %tmp.12 = true;
         putv self :initialized %tmp.12;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 43 12 ]
+        %tmp.13 = null;
+        putv self :stops %tmp.13;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_35_33_stop:
         goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_35_8_if_end;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_35_8_if_end:
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_33_31_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 47; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 48; ]
     function getClosestStops(positionInfo) {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_47_42_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 48 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_48_42_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 49 8 ]
         %tmp.2 = getv ? :closestStops;
         ret %tmp.2;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_47_42_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_48_42_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 52; typecheck = false; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 53; typecheck = false; ]
     function calculateClosestStops() {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 55 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 56 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
         %n.1 = local;
-        %tmp.1 = 5;
+        %tmp.1 = 6;
         lputv %n.1 %tmp.1;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 57 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
-        %lon.2 = local;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 58 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
-        %lat.3 = local;
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
+        %lon.2 = local;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 59 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
-        %stop.4 = local;
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
+        %lat.3 = local;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 60 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
-        %dist.5 = local;
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
+        %stop.4 = local;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 61 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop" ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
+        %dist.5 = local;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 62 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop" ]
         %closest_stops.6 = local;
         %tmp.2 = newa 0;
         lputv %closest_stops.6 %tmp.2;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 64 8 ]
-        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_init:
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_end" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 65 8 ]
+        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_init:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_end" ]
         %j.7 = local;
         %tmp.3 = 0;
         lputv %j.7 %tmp.3;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_test:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_test:
         %tmp.5 = lgetv %j.7;
         %tmp.7 = lgetv %n.1;
         %tmp.8 = lt %tmp.5 %tmp.7;
-        bf %tmp.8 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_36_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 65 12 ]
+        bf %tmp.8 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_begin:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_36_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 66 12 ]
         %tmp.10 = getv ? :stops;
         %tmp.12 = lgetv %j.7;
         %tmp.13 = agetv %tmp.10 %tmp.12;
         lputv %stop.4 %tmp.13;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 66 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 67 12 ]
         %tmp.15 = lgetv %stop.4;
         %tmp.16 = "coors";
         %tmp.17 = agetv %tmp.15 %tmp.16;
         %tmp.18 = 0;
         %tmp.19 = agetv %tmp.17 %tmp.18;
         lputv %lon.2 %tmp.19;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 67 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 68 12 ]
         %tmp.21 = lgetv %stop.4;
         %tmp.22 = "coors";
         %tmp.23 = agetv %tmp.21 %tmp.22;
         %tmp.24 = 1;
         %tmp.25 = agetv %tmp.23 %tmp.24;
         lputv %lat.3 %tmp.25;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 68 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 69 12 ]
         %tmp.26 = self;
         %tmp.27 = getv function %tmp.26 :calculateDistance;
         %tmp.29 = lgetv %lat.3;
@@ -150,66 +156,66 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64
         %tmp.39 = agetv %tmp.37 %tmp.38;
         %tmp.40 = invoke %tmp.26 %tmp.27(%tmp.29, %tmp.33, %tmp.35, %tmp.39);
         lputv %dist.5 %tmp.40;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 69 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 70 12 ]
         %tmp.41 = lgetv %stop.4;
         %tmp.42 = getv function %tmp.41 :put;
         %tmp.43 = "distance";
         %tmp.45 = lgetv %dist.5;
         invoke %tmp.41 %tmp.42(%tmp.43, %tmp.45);
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 70 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 71 12 ]
         %tmp.46 = lgetv %closest_stops.6;
         %tmp.47 = getv function %tmp.46 :add;
         %tmp.49 = lgetv %stop.4;
         invoke %tmp.46 %tmp.47(%tmp.49);
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 71 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 72 12 ]
         %tmp.50 = self;
         %tmp.51 = getv function %tmp.50 :putLargestInFront;
         %tmp.53 = lgetv %closest_stops.6;
         %tmp.54 = invoke %tmp.50 %tmp.51(%tmp.53);
         lputv %closest_stops.6 %tmp.54;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_36_stop:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_incr:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 64 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_36_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_incr:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 65 ]
         %tmp.55 = lgetv %j.7;
         %tmp.56 = 1;
         %tmp.57 = add %tmp.55 %tmp.56;
         lputv %j.7 %tmp.57;
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_test;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_64_8_for_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 77 8 ]
-        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_init:
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_end" ]
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_test;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_65_8_for_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 78 8 ]
+        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_init:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_end" ]
         %j.8 = local;
         %tmp.59 = lgetv %n.1;
         lputv %j.8 %tmp.59;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_test:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_test:
         %tmp.61 = lgetv %j.8;
         %tmp.62 = 1441;
         %tmp.63 = lt %tmp.61 %tmp.62;
-        bf %tmp.63 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_39_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 80 12 ]
+        bf %tmp.63 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_begin:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_39_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 81 12 ]
         %tmp.65 = getv ? :stops;
         %tmp.67 = lgetv %j.8;
         %tmp.68 = agetv %tmp.65 %tmp.67;
         lputv %stop.4 %tmp.68;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 81 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 82 12 ]
         %tmp.70 = lgetv %stop.4;
         %tmp.71 = "coors";
         %tmp.72 = agetv %tmp.70 %tmp.71;
         %tmp.73 = 0;
         %tmp.74 = agetv %tmp.72 %tmp.73;
         lputv %lon.2 %tmp.74;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 82 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 83 12 ]
         %tmp.76 = lgetv %stop.4;
         %tmp.77 = "coors";
         %tmp.78 = agetv %tmp.76 %tmp.77;
         %tmp.79 = 1;
         %tmp.80 = agetv %tmp.78 %tmp.79;
         lputv %lat.3 %tmp.80;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 84 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 85 12 ]
         %tmp.81 = self;
         %tmp.82 = getv function %tmp.81 :calculateDistance;
         %tmp.84 = lgetv %lat.3;
@@ -222,8 +228,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77
         %tmp.94 = agetv %tmp.92 %tmp.93;
         %tmp.95 = invoke %tmp.81 %tmp.82(%tmp.84, %tmp.88, %tmp.90, %tmp.94);
         lputv %dist.5 %tmp.95;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 87 12 ]
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_12_if_stmt:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 88 12 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_12_if_stmt:
         %tmp.97 = lgetv %dist.5;
         %tmp.99 = lgetv %closest_stops.6;
         %tmp.100 = 0;
@@ -231,69 +237,71 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87
         %tmp.102 = "distance";
         %tmp.103 = agetv %tmp.101 %tmp.102;
         %tmp.104 = gt %tmp.97 %tmp.103;
-        bf %tmp.104 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_12_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_12_if_true:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_50_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 88 16 ]
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_incr;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_50_stop:
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_12_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_87_12_if_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 90 12 ]
+        bf %tmp.104 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_12_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_12_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_50_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 89 16 ]
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_incr;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_50_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_12_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_88_12_if_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 91 12 ]
         %tmp.105 = lgetv %stop.4;
         %tmp.106 = getv function %tmp.105 :put;
         %tmp.107 = "distance";
         %tmp.109 = lgetv %dist.5;
         invoke %tmp.105 %tmp.106(%tmp.107, %tmp.109);
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 91 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 92 12 ]
         %tmp.110 = lgetv %closest_stops.6;
         %tmp.111 = getv function %tmp.110 :add;
         %tmp.113 = lgetv %stop.4;
         invoke %tmp.110 %tmp.111(%tmp.113);
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 92 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 93 12 ]
         %tmp.114 = lgetv %closest_stops.6;
         %tmp.115 = getv function %tmp.114 :slice;
         %tmp.116 = 1;
-        %tmp.117 = 6;
-        %tmp.118 = invoke %tmp.114 %tmp.115(%tmp.116, %tmp.117);
-        lputv %closest_stops.6 %tmp.118;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 93 12 ]
-        %tmp.119 = self;
-        %tmp.120 = getv function %tmp.119 :putLargestInFront;
-        %tmp.122 = lgetv %closest_stops.6;
-        %tmp.123 = invoke %tmp.119 %tmp.120(%tmp.122);
-        lputv %closest_stops.6 %tmp.123;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_39_stop:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_incr:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 77 ]
-        %tmp.124 = lgetv %j.8;
-        %tmp.125 = 1;
-        %tmp.126 = add %tmp.124 %tmp.125;
-        lputv %j.8 %tmp.126;
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_test;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_77_8_for_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 96 8 ]
-        %tmp.127 = getm $.Toybox.System;
-        %tmp.128 = getv function %tmp.127 :println;
-        %tmp.129 = "I found which stops are the closest to the current location.";
-        invoke %tmp.127 %tmp.128(%tmp.129);
+        %tmp.118 = lgetv %n.1;
+        %tmp.119 = 1;
+        %tmp.120 = add %tmp.118 %tmp.119;
+        %tmp.121 = invoke %tmp.114 %tmp.115(%tmp.116, %tmp.120);
+        lputv %closest_stops.6 %tmp.121;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 94 12 ]
+        %tmp.122 = self;
+        %tmp.123 = getv function %tmp.122 :putLargestInFront;
+        %tmp.125 = lgetv %closest_stops.6;
+        %tmp.126 = invoke %tmp.122 %tmp.123(%tmp.125);
+        lputv %closest_stops.6 %tmp.126;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_39_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_incr:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 78 ]
+        %tmp.127 = lgetv %j.8;
+        %tmp.128 = 1;
+        %tmp.129 = add %tmp.127 %tmp.128;
+        lputv %j.8 %tmp.129;
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_test;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_78_8_for_end:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 97 8 ]
         %tmp.130 = getm $.Toybox.System;
         %tmp.131 = getv function %tmp.130 :println;
-        %tmp.132 = lgetv %closest_stops.6;
-        %tmp.133 = getv function %tmp.132 :size;
-        %tmp.134 = invoke %tmp.132 %tmp.133();
-        invoke %tmp.130 %tmp.131(%tmp.134);
+        %tmp.132 = "I found which stops are the closest to the current location.";
+        invoke %tmp.130 %tmp.131(%tmp.132);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 98 8 ]
-        %tmp.136 = lgetv %closest_stops.6;
-        ret %tmp.136;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_53_36_stop:
+        %tmp.133 = getm $.Toybox.System;
+        %tmp.134 = getv function %tmp.133 :println;
+        %tmp.135 = lgetv %closest_stops.6;
+        %tmp.136 = getv function %tmp.135 :size;
+        %tmp.137 = invoke %tmp.135 %tmp.136();
+        invoke %tmp.133 %tmp.134(%tmp.137);
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 99 8 ]
+        %tmp.139 = lgetv %closest_stops.6;
+        ret %tmp.139;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_54_36_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 104; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 105; ]
     function calculateDistance(lat1, lat2, lon1, lon2) {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_104_54_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 105 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_104_54_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_104_54_stop" ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_105_54_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 106 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_105_54_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_105_54_stop" ]
         %distance.1 = local;
         %tmp.2 = lgetv %lat1;
         %tmp.4 = lgetv %lat2;
@@ -313,42 +321,42 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_10
         %tmp.24 = mul %tmp.18 %tmp.23;
         %tmp.25 = add %tmp.11 %tmp.24;
         lputv %distance.1 %tmp.25;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 106 8 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 107 8 ]
         %tmp.27 = lgetv %distance.1;
         ret %tmp.27;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_104_54_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_105_54_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 113; typecheck = false; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 114; typecheck = false; ]
     function putLargestInFront(array) {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_114_37_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 115 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_114_37_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_114_37_stop" ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_115_37_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 116 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_115_37_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_115_37_stop" ]
         %size.1 = local;
         %tmp.1 = lgetv %array;
         %tmp.2 = getv function %tmp.1 :size;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %size.1 %tmp.3;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 116 8 ]
-        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_init:
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_end" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 117 8 ]
+        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_init:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_end" ]
         %i.2 = local;
         %tmp.5 = lgetv %size.1;
         %tmp.6 = 1;
         %tmp.7 = sub %tmp.5 %tmp.6;
         lputv %i.2 %tmp.7;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_test:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_test:
         %tmp.9 = lgetv %i.2;
         %tmp.10 = 0;
         %tmp.11 = gt %tmp.9 %tmp.10;
-        bf %tmp.11 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_41_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 117 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_41_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_41_stop" ]
-        %hold.3 = local;
+        bf %tmp.11 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_begin:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_41_start:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 118 12 ]
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_12_if_stmt:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_41_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_41_stop" ]
+        %hold.3 = local;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 119 12 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_12_if_stmt:
         %tmp.13 = lgetv %array;
         %tmp.15 = lgetv %i.2;
         %tmp.16 = agetv %tmp.13 %tmp.15;
@@ -362,15 +370,15 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_11
         %tmp.26 = "distance";
         %tmp.27 = agetv %tmp.25 %tmp.26;
         %tmp.28 = gt %tmp.18 %tmp.27;
-        bf %tmp.28 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_12_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_12_if_true:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_60_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 119 16 ]
+        bf %tmp.28 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_12_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_12_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_60_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 120 16 ]
         %tmp.30 = lgetv %array;
         %tmp.32 = lgetv %i.2;
         %tmp.33 = agetv %tmp.30 %tmp.32;
         lputv %hold.3 %tmp.33;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 120 16 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 121 16 ]
         %tmp.34 = lgetv %array;
         %tmp.36 = lgetv %array;
         %tmp.38 = lgetv %i.2;
@@ -379,29 +387,29 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_11
         %tmp.41 = agetv %tmp.36 %tmp.40;
         %tmp.43 = lgetv %i.2;
         aputv %tmp.34 %tmp.43 %tmp.41;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 121 16 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 122 16 ]
         %tmp.44 = lgetv %array;
         %tmp.46 = lgetv %hold.3;
         %tmp.48 = lgetv %i.2;
         %tmp.49 = 1;
         %tmp.50 = sub %tmp.48 %tmp.49;
         aputv %tmp.44 %tmp.50 %tmp.46;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_60_stop:
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_12_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_118_12_if_end:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_41_stop:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_incr:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 116 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_60_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_12_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_119_12_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_41_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_incr:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 117 ]
         %tmp.51 = lgetv %i.2;
         %tmp.52 = 1;
         %tmp.53 = sub %tmp.51 %tmp.52;
         lputv %i.2 %tmp.53;
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_test;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_116_8_for_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 124 8 ]
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_test;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_117_8_for_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc" 125 8 ]
         %tmp.55 = lgetv %array;
         ret %tmp.55;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_114_37_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_Stops_mc_115_37_stop:
     }
 }
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\Stops.mc"; @line = 1; ]

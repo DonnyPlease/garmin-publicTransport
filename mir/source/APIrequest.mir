@@ -195,69 +195,61 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
         lputv %options.3 %tmp.39;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 74 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_54_35_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_54_35_stop" ]
-        %responseCallback.4 = local;
-        %tmp.40 = self;
-        %tmp.41 = getv function %tmp.40 :method;
-        %tmp.43 = const :onReceive;
-        %tmp.44 = invoke %tmp.40 %tmp.41(%tmp.43);
-        lputv %responseCallback.4 %tmp.44;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 76 8 ]
-        %tmp.45 = getm $.Toybox.Communications;
-        %tmp.46 = getv function %tmp.45 :makeWebRequest;
-        %tmp.48 = lgetv %url.1;
-        %tmp.50 = lgetv %params.2;
-        %tmp.52 = lgetv %options.3;
-        %tmp.53 = self;
-        %tmp.54 = getv function %tmp.53 :method;
-        %tmp.56 = const :onReceive;
-        %tmp.57 = invoke %tmp.53 %tmp.54(%tmp.56);
-        invoke %tmp.45 %tmp.46(%tmp.48, %tmp.50, %tmp.52, %tmp.57);
+        %tmp.40 = getm $.Toybox.Communications;
+        %tmp.41 = getv function %tmp.40 :makeWebRequest;
+        %tmp.43 = lgetv %url.1;
+        %tmp.45 = lgetv %params.2;
+        %tmp.47 = lgetv %options.3;
+        %tmp.48 = self;
+        %tmp.49 = getv function %tmp.48 :method;
+        %tmp.51 = const :onReceive;
+        %tmp.52 = invoke %tmp.48 %tmp.49(%tmp.51);
+        invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45, %tmp.47, %tmp.52);
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_54_35_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc"; @line = 83; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc"; @line = 81; typecheck = false; ]
     function digestData(data) {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 84 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 83 8 ]
         %tmp.2 = lgetv %data;
         %tmp.3 = "departures";
         %tmp.4 = agetv %tmp.2 %tmp.3;
         lputv %data %tmp.4;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 85 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 84 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_stop" ]
         %size.1 = local;
         %tmp.5 = lgetv %data;
         %tmp.6 = getv function %tmp.5 :size;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         lputv %size.1 %tmp.7;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 86 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 85 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_stop" ]
         %departures.2 = local;
         %tmp.8 = newa 0;
         lputv %departures.2 %tmp.8;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 89 8 ]
-        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_init:
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_end" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 88 8 ]
+        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_init:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_end" ]
         %i.3 = local;
         %tmp.9 = 0;
         lputv %i.3 %tmp.9;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_test:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_test:
         %tmp.11 = lgetv %i.3;
         %tmp.13 = lgetv %size.1;
         %tmp.14 = lt %tmp.11 %tmp.13;
-        bf %tmp.14 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 91 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop" ]
+        bf %tmp.14 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_begin:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 90 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop" ]
         %departure.4 = local;
         %tmp.16 = lgetv %data;
         %tmp.18 = lgetv %i.3;
         %tmp.19 = agetv %tmp.16 %tmp.18;
         lputv %departure.4 %tmp.19;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 93 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 92 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop" ]
         %time.5 = local;
         %tmp.21 = lgetv %departure.4;
         %tmp.22 = "departure_timestamp";
@@ -265,8 +257,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.24 = "predicted";
         %tmp.25 = agetv %tmp.23 %tmp.24;
         lputv %time.5 %tmp.25;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 94 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 93 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop" ]
         %name.6 = local;
         %tmp.27 = lgetv %departure.4;
         %tmp.28 = "route";
@@ -274,8 +266,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.30 = "short_name";
         %tmp.31 = agetv %tmp.29 %tmp.30;
         lputv %name.6 %tmp.31;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 95 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 94 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop" ]
         %direction.7 = local;
         %tmp.33 = lgetv %departure.4;
         %tmp.34 = "trip";
@@ -283,15 +275,15 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.36 = "headsign";
         %tmp.37 = agetv %tmp.35 %tmp.36;
         lputv %direction.7 %tmp.37;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 97 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 96 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop" ]
         %departsIn.8 = local;
         %tmp.38 = self;
         %tmp.39 = getv function %tmp.38 :timeFromNowInMinutes;
         %tmp.41 = lgetv %time.5;
         %tmp.42 = invoke %tmp.38 %tmp.39(%tmp.41);
         lputv %departsIn.8 %tmp.42;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 101 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 100 12 ]
         %tmp.43 = newd 3;
         %tmp.44 = "name";
         %tmp.46 = lgetv %name.6;
@@ -306,30 +298,30 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.57 = dup %tmp.53;
         %tmp.58 = aputv %tmp.57 %tmp.54 %tmp.56;
         lputv %departure.4 %tmp.58;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 106 12 ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 105 12 ]
         %tmp.59 = lgetv %departures.2;
         %tmp.60 = getv function %tmp.59 :add;
         %tmp.62 = lgetv %departure.4;
         invoke %tmp.59 %tmp.60(%tmp.62);
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_39_stop:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_incr:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 89 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_39_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_incr:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 88 ]
         %tmp.63 = lgetv %i.3;
         %tmp.64 = 1;
         %tmp.65 = add %tmp.63 %tmp.64;
         lputv %i.3 %tmp.65;
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_test;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_89_8_for_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 108 8 ]
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_test;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_88_8_for_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 107 8 ]
         %tmp.67 = lgetv %departures.2;
         ret %tmp.67;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_83_29_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_82_29_stop:
     }
-    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc"; @line = 113; ]
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc"; @line = 112; ]
     function timeFromNowInMinutes(time) {
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 114 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop" ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 113 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop" ]
         %hour.1 = local;
         %tmp.1 = lgetv %time;
         %tmp.2 = getv function %tmp.1 :substring;
@@ -339,8 +331,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.6 = getv function %tmp.5 :toNumber;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         lputv %hour.1 %tmp.7;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 115 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 114 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop" ]
         %minute.2 = local;
         %tmp.8 = lgetv %time;
         %tmp.9 = getv function %tmp.8 :substring;
@@ -350,8 +342,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.13 = getv function %tmp.12 :toNumber;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         lputv %minute.2 %tmp.14;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 116 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 115 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop" ]
         %second.3 = local;
         %tmp.15 = lgetv %time;
         %tmp.16 = getv function %tmp.15 :substring;
@@ -361,8 +353,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.20 = getv function %tmp.19 :toNumber;
         %tmp.21 = invoke %tmp.19 %tmp.20();
         lputv %second.3 %tmp.21;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 118 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 117 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop" ]
         %now.4 = local;
         %tmp.22 = getm $.Toybox.Time.Gregorian;
         %tmp.23 = getv function %tmp.22 :info;
@@ -373,8 +365,8 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.28 = getv %tmp.27 :FORMAT_MEDIUM;
         %tmp.29 = invoke %tmp.22 %tmp.23(%tmp.26, %tmp.28);
         lputv %now.4 %tmp.29;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 120 8 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop" ]
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 119 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop" ]
         %timeDifference.5 = local;
         %tmp.31 = lgetv %hour.1;
         %tmp.32 = lgetv %now.4;
@@ -395,15 +387,15 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.49 = sub %tmp.46 %tmp.48;
         %tmp.50 = add %tmp.44 %tmp.49;
         lputv %timeDifference.5 %tmp.50;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 121 8 ]
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_stmt:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 120 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_stmt:
         %tmp.52 = lgetv %timeDifference.5;
         %tmp.53 = 0;
         %tmp.54 = lt %tmp.52 %tmp.53;
-        bf %tmp.54 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_false;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_true:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_32_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 122 12 ]
+        bf %tmp.54 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_32_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 121 12 ]
         %tmp.55 = lgetv %timeDifference.5;
         %tmp.56 = 24;
         %tmp.57 = 60;
@@ -412,25 +404,25 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.60 = mul %tmp.58 %tmp.59;
         %tmp.61 = add %tmp.55 %tmp.60;
         lputv %timeDifference.5 %tmp.61;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_32_stop:
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_false:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 123 15 ]
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_15_if_stmt:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_32_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_false:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 122 15 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_15_if_stmt:
         %tmp.63 = lgetv %timeDifference.5;
         %tmp.64 = 60;
         %tmp.65 = lt %tmp.63 %tmp.64;
-        bf %tmp.65 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_15_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_15_if_true:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_40_start:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 124 12 ]
+        bf %tmp.65 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_15_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_40_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 123 12 ]
         %tmp.66 = "<1";
         ret %tmp.66;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_40_stop:
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_15_if_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_123_15_if_end:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_121_8_if_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 126 8 ]
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_40_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_15_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_122_15_if_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_120_8_if_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc" 125 8 ]
         %tmp.67 = getm $.Toybox.Math;
         %tmp.68 = getv function %tmp.67 :floor;
         %tmp.70 = lgetv %timeDifference.5;
@@ -440,7 +432,7 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_
         %tmp.74 = getv function %tmp.73 :toString;
         %tmp.75 = invoke %tmp.73 %tmp.74();
         ret %tmp.75;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_113_40_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_APIrequest_mc_112_40_stop:
     }
 }
 [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\APIrequest.mc"; @line = 1; ]

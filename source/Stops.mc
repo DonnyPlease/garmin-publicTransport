@@ -1,6 +1,5 @@
 import Toybox.Application;
 using Toybox.Math;
-using Toybox.Test;
 using Toybox.System;
 
 // This class exist for separation of the app from the data it works with.
@@ -24,6 +23,7 @@ class Stops {
     // A constructor
     (:typecheck(false))
     function initialize(){
+        System.println("Now loading!");
         stops = Application.loadResource(Rez.JsonData.jsonFile);
         stops = stops["stops"];
     }  
@@ -40,6 +40,7 @@ class Stops {
             closestStops = calculateClosestStops();  // Array of 5 stops that are closest to the current location. 
             initialized = true;  // Finish initialization so that we do not calculate the same thing over and over, 
                                  // because small change in position would most likely not make any difference.
+            stops = null;
         }
     }
 
@@ -52,7 +53,7 @@ class Stops {
     (:typecheck(false))
     function calculateClosestStops(){
 
-        var n = 5;  // Number of stops we want to return.
+        var n = 6;  // Number of stops we want to return.
 
         var lon;  // Longitude
         var lat;  // latitdude
@@ -89,7 +90,7 @@ class Stops {
             }
             stop.put("distance", dist);  // Save information about the distance.
             closest_stops.add(stop);  // Add to the array.
-            closest_stops = closest_stops.slice(1,6);  // Remove the first one, as it is too far.
+            closest_stops = closest_stops.slice(1,n+1);  // Remove the first one, as it is too far.
             closest_stops = putLargestInFront(closest_stops);  // Put array in descending order again. 
         }
 
