@@ -1,0 +1,156 @@
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 12; ]
+    module Fonts {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 15; ]
+    module JsonData {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 15; ]
+        <init> {
+        }
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        var jsonFile as Symbol;
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 19; ]
+    module Layouts {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 19; ]
+        <init> {
+        }
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 20; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_20_74_start:
+[ "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen" 21 12 ]
+            [ "c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_20_74_start" "c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_20_74_stop" ]
+            %rez_cmp_local_text_1862078746.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :color;
+            %tmp.8 = getm $.Toybox.Graphics;
+            %tmp.9 = getv %tmp.8 :COLOR_WHITE;
+            %tmp.10 = dup %tmp.5;
+            %tmp.11 = aputv %tmp.10 %tmp.7 %tmp.9;
+            %tmp.13 = const :locX;
+            %tmp.14 = 240;
+            %tmp.15 = 0.5;
+            %tmp.16 = mul %tmp.14 %tmp.15;
+            %tmp.17 = dup %tmp.11;
+            %tmp.18 = aputv %tmp.17 %tmp.13 %tmp.16;
+            %tmp.20 = const :locY;
+            %tmp.21 = 240;
+            %tmp.22 = lgetv %dc;
+            %tmp.23 = getv function %tmp.22 :getFontHeight;
+            %tmp.24 = getm $.Toybox.Graphics;
+            %tmp.25 = getv %tmp.24 :FONT_MEDIUM;
+            %tmp.26 = invoke %tmp.22 %tmp.23(%tmp.25);
+            %tmp.27 = sub %tmp.21 %tmp.26;
+            %tmp.28 = 0.5;
+            %tmp.29 = mul %tmp.27 %tmp.28;
+            %tmp.30 = dup %tmp.18;
+            %tmp.31 = aputv %tmp.30 %tmp.20 %tmp.29;
+            %tmp.33 = const :text;
+            %tmp.34 = getm $;
+            %tmp.35 = getv %tmp.34 :Rez;
+            %tmp.36 = getv %tmp.35 :Strings;
+            %tmp.37 = getv %tmp.36 :prompt;
+            %tmp.38 = dup %tmp.31;
+            %tmp.39 = aputv %tmp.38 %tmp.33 %tmp.37;
+            %tmp.41 = const :justification;
+            %tmp.42 = getm $.Toybox.Graphics;
+            %tmp.43 = getv %tmp.42 :TEXT_JUSTIFY_CENTER;
+            %tmp.44 = dup %tmp.39;
+            %tmp.45 = aputv %tmp.44 %tmp.41 %tmp.43;
+            %tmp.47 = const :font;
+            %tmp.48 = getm $.Toybox.Graphics;
+            %tmp.49 = getv %tmp.48 :FONT_MEDIUM;
+            %tmp.50 = dup %tmp.45;
+            %tmp.51 = aputv %tmp.50 %tmp.47 %tmp.49;
+            %tmp.1 = newc %tmp.4 (%tmp.51);
+            lputv %rez_cmp_local_text_1862078746.1 %tmp.1;
+[ "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen" 23 12 ]
+            %tmp.52 = newa Array<WatchUi.Drawable> 1;
+            %tmp.54 = lgetv %rez_cmp_local_text_1862078746.1;
+            %tmp.55 = dup %tmp.52;
+            %tmp.56 = aputv %tmp.55 0 %tmp.54;
+            ret %tmp.56;
+c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_20_74_stop:
+        }
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 27; ]
+    module Menus {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 27; ]
+        <init> {
+        }
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 28; ]
+        class MainMenu extends WatchUi.Menu{
+            [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 28; ]
+            <init> {
+            }
+            [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 28; ]
+            static
+            <init> {
+            }
+            [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 29; ]
+            function initialize() as Void {
+c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_29_34_start:
+[ "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen" 30 16 ]
+                %tmp.2 = getv ? :Menu;
+                %tmp.3 = getv function %tmp.2 :initialize;
+                invoke %tmp.2 %tmp.3();
+[ "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen" 31 16 ]
+                %tmp.4 = self;
+                %tmp.5 = getv function %tmp.4 :addItem;
+                %tmp.6 = getm $.Toybox.WatchUi;
+                %tmp.7 = getv function %tmp.6 :loadResource;
+                %tmp.8 = getm $;
+                %tmp.9 = getv %tmp.8 :Rez;
+                %tmp.10 = getv %tmp.9 :Strings;
+                %tmp.11 = getv %tmp.10 :menu_label_1;
+                %tmp.12 = invoke %tmp.6 %tmp.7(%tmp.11);
+                %tmp.13 = as %tmp.12 String;
+                %tmp.15 = const :item_1;
+                invoke %tmp.4 %tmp.5(%tmp.13, %tmp.15);
+c_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_gen_006_B2988_00_source_Rez_mcgen_29_34_stop:
+            }
+        }
+    }
+    [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 36; ]
+    module Strings {
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 36; ]
+        <init> {
+        }
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        var menu_label_1 as Symbol;
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        var prompt as Symbol;
+        [ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+[ @file = "c:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\gen\006-B2988-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}

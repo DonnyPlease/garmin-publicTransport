@@ -6,32 +6,46 @@ class mainViewDelegate extends WatchUi.BehaviorDelegate {
 
     var positionInfo;
     var stops;
+    var departureBoards = {};
+    
 
     function initialize() {
         BehaviorDelegate.initialize();
         stops = new Stops();
+    }
 
+    function setDepartureBoard(name, depBoard){
+        departureBoards.put(name, depBoard);
+    }
+
+    function getDepartureBoard(name){
+        return departureBoards[name];
     }
 
 
     function onSelect() {
         var ChooseStopMenu = new WatchUi.Menu2({:title=>"Choose a stop"});
         var delegate;
-
+        if (positionInfo == null){
+            return true;
+        }
         var closestStops = stops.getClosestStops(positionInfo);
+
+        //var apiRequest = new APIrequest();
         for( var i = 0; i < 5; i += 1 ) {
             var name = closestStops[i]["name"];
+            var apiRequest = new APIrequest(name);
 
             ChooseStopMenu.addItem(
                 new MenuItem(
                     name,
                     null,
-                    "itemOneId",
+                    name,
                     {}
                 )
             );
+            apiRequest.makeRequest();
         }
-
         delegate = new ChooseStopMenuDelegate();
         WatchUi.pushView(ChooseStopMenu, delegate, WatchUi.SLIDE_UP);
         return true;

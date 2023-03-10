@@ -1,0 +1,35 @@
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 2; ]
+import Toybox.System;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 4; ]
+using Toybox.Position;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 5; ]
+using Toybox.Application;
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 8; ]
+class ChooseLineMenuDelegate extends WatchUi.Menu2InputDelegate{
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 11; ]
+    function initialize() as Void {
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseLineMenuDelegate_mc_11_26_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc" 12 8 ]
+        %tmp.2 = getv ? :Menu2InputDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseLineMenuDelegate_mc_11_26_stop:
+    }
+    [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 16; ]
+    function onSelect(item as WatchUi.MenuItem) as Void {
+    }
+}
+[ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseLineMenuDelegate.mc"; @line = 1; ]
+<init> {
+}

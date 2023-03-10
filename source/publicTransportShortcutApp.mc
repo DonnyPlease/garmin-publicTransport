@@ -8,11 +8,22 @@ class publicTransportShortcutApp extends Application.AppBase {
 
     var myView;
     var myViewDelegate;
+    var rawInfoboard;
+    var infoBoard;
 
+    
 
     function initialize() {
         AppBase.initialize();
 
+    }
+
+    function setInfoboard(data){
+        infoBoard = data;
+    }
+
+    function getInfoboard(){
+        return infoBoard;
     }
 
     // onStart() is called on application start up
@@ -37,6 +48,9 @@ class publicTransportShortcutApp extends Application.AppBase {
 
 
     function onPosition(info as Toybox.Position.Info) as Void {
+        if (info.position == null) {
+            return;
+        }
         var myLocation = info.position.toDegrees();
         myView.setPositionInfo(info);
         myViewDelegate.setPosition(info);

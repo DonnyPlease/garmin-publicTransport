@@ -62,7 +62,7 @@
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainViewDelegate.mc" id="16" lineNum="49" parent="globals/mainViewDelegate" pc="268436518" symbol="onSelect"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainViewDelegate.mc" id="16" lineNum="50" parent="globals/mainViewDelegate" pc="268436546" symbol="onSelect"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainViewDelegate.mc" id="16" lineNum="51" parent="globals/mainViewDelegate" pc="268436571" symbol="onSelect"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="17" lineNum="7" parent="globals/Rez" pc="268436574" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="17" lineNum="7" parent="globals/Rez" pc="268436574" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\APIrequest.mc" id="18" lineNum="113" parent="globals/APIrequest" pc="268436598" symbol="timeFromNowInMinutes"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\APIrequest.mc" id="18" lineNum="114" parent="globals/APIrequest" pc="268436602" symbol="timeFromNowInMinutes"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\APIrequest.mc" id="18" lineNum="115" parent="globals/APIrequest" pc="268436634" symbol="timeFromNowInMinutes"/>
@@ -190,13 +190,13 @@
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="40" lineNum="10" parent="globals/mainView" pc="268438795" symbol="initialize"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="42" lineNum="25" parent="globals/mainView" pc="268438814" symbol="onUpdate"/>
 <entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\source\\mainView.mc" id="42" lineNum="27" parent="globals/mainView" pc="268438816" symbol="onUpdate"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268438837" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="21" parent="globals/Rez/Layouts" pc="268438849" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="23" parent="globals/Rez/Layouts" pc="268439003" symbol="MainLayout"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="44" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268439020" symbol="&lt;init&gt;"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268439039" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268439041" symbol="initialize"/>
-<entry filename="C:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\bin\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268439059" symbol="initialize"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="20" parent="globals/Rez/Layouts" pc="268438837" symbol="MainLayout"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="21" parent="globals/Rez/Layouts" pc="268438849" symbol="MainLayout"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="43" lineNum="23" parent="globals/Rez/Layouts" pc="268439003" symbol="MainLayout"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="44" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268439020" symbol="&lt;init&gt;"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268439039" symbol="initialize"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="30" parent="globals/Rez/Menus/MainMenu" pc="268439041" symbol="initialize"/>
+<entry filename="c:\\Users\\samue\\Dokumenty\\Coding\\Garmin\\publicTransportShortcut\\gen\\006-B2988-00\\source\\Rez.mcgen" id="45" lineNum="31" parent="globals/Rez/Menus/MainMenu" pc="268439059" symbol="initialize"/>
 </pcToLineNum>
 <symbolTable>
 <entry field="true" id="55" symbol="jsonFile"/>
@@ -373,7 +373,7 @@
 <entry arg="true" endPc="268438792" name="info" stackId="1" startPc="268438780"/>
 <entry arg="true" endPc="268438836" name="dc" stackId="1" startPc="268438814"/>
 <entry arg="true" endPc="268439019" name="dc" stackId="1" startPc="268438837"/>
-<entry endPc="268439019" name="rez_cmp_local_text_2041816262" stackId="2" startPc="268438849"/>
+<entry endPc="268439019" name="rez_cmp_local_text_1862078746" stackId="2" startPc="268438849"/>
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
