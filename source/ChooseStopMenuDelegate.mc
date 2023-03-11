@@ -25,22 +25,35 @@ class ChooseStopMenuDelegate extends WatchUi.Menu2InputDelegate {
         var delegate;
 
         System.println(name);
-        for (var i = 0; i<size; i+=1) {
-            var departure = infoBoard[i];
-            // System.println(departure["name"] + );
-            
-            var info = departure["name"] + " => " + departure["direction"] + " - " + departure["departs in"] + " min";
-            System.println(info);
+        if (size > 0){ 
+            for (var i = 0; i< size ; i+=1) {
+                var departure = infoBoard[i];
+                // System.println(departure["name"] + );
+                
+                var info = departure["name"] + " => " + departure["direction"] + " - " + departure["departs in"] + " min";
+                System.println(info);
 
+                ChooseLineMenu.addItem(
+                    new MenuItem(
+                        info,
+                        null,
+                        i.toString(),
+                        {}
+                    )
+                );
+            }
+         } else {
+            var message = "No departures in the near future";
             ChooseLineMenu.addItem(
-                new MenuItem(
-                    info,
-                    null,
-                    i.toString(),
-                    {}
-                )
-            );
-        }
+                    new MenuItem(
+                        message,
+                        null,
+                        name,
+                        {}
+                    )
+                );
+         }
+        
 
         delegate = new ChooseLineMenuDelegate();
         WatchUi.pushView(ChooseLineMenu, delegate, WatchUi.SLIDE_UP);

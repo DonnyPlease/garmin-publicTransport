@@ -35,9 +35,9 @@ class mainViewDelegate extends WatchUi.BehaviorDelegate {
             return true;
         }
         var closestStops = stops.getClosestStops(positionInfo);
-
+        var size =closestStops.size();
         //var apiRequest = new APIrequest();
-        for( var i = 0; i < closestStops.size(); i += 1 ) {
+        for( var i = size -1; i >=0 ; i -= 1 ) {
             var name = closestStops[i]["name"];
             var apiRequest = new APIrequest(name);
 

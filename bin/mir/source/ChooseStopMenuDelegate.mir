@@ -88,85 +88,114 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopM
         %tmp.33 = lgetv %name.1;
         invoke %tmp.30 %tmp.31(%tmp.33);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 28 8 ]
-        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_init:
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_end" ]
-        %i.6 = local;
-        %tmp.34 = 0;
-        lputv %i.6 %tmp.34;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_test:
-        %tmp.36 = lgetv %i.6;
-        %tmp.38 = lgetv %size.3;
-        %tmp.39 = lt %tmp.36 %tmp.38;
-        bf %tmp.39 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_end;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_start:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_stmt:
+        %tmp.35 = lgetv %size.3;
+        %tmp.36 = 0;
+        %tmp.37 = gt %tmp.35 %tmp.36;
+        bf %tmp.37 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_false;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_true:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_21_start:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 29 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_stop" ]
+        for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_init:
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_end" ]
+        %i.6 = local;
+        %tmp.38 = 0;
+        lputv %i.6 %tmp.38;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_test:
+        %tmp.40 = lgetv %i.6;
+        %tmp.42 = lgetv %size.3;
+        %tmp.43 = lt %tmp.40 %tmp.42;
+        bf %tmp.43 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_begin:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 30 16 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_stop" ]
         %departure.7 = local;
-        %tmp.41 = lgetv %infoBoard.2;
-        %tmp.43 = lgetv %i.6;
-        %tmp.44 = agetv %tmp.41 %tmp.43;
-        lputv %departure.7 %tmp.44;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 32 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_stop" ]
+        %tmp.45 = lgetv %infoBoard.2;
+        %tmp.47 = lgetv %i.6;
+        %tmp.48 = agetv %tmp.45 %tmp.47;
+        lputv %departure.7 %tmp.48;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 33 16 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_stop" ]
         %info.8 = local;
-        %tmp.46 = lgetv %departure.7;
-        %tmp.47 = "name";
-        %tmp.48 = agetv %tmp.46 %tmp.47;
-        %tmp.49 = " => ";
-        %tmp.50 = add %tmp.48 %tmp.49;
-        %tmp.52 = lgetv %departure.7;
-        %tmp.53 = "direction";
-        %tmp.54 = agetv %tmp.52 %tmp.53;
-        %tmp.55 = add %tmp.50 %tmp.54;
-        %tmp.56 = " - ";
-        %tmp.57 = add %tmp.55 %tmp.56;
-        %tmp.59 = lgetv %departure.7;
-        %tmp.60 = "departs in";
-        %tmp.61 = agetv %tmp.59 %tmp.60;
-        %tmp.62 = add %tmp.57 %tmp.61;
-        %tmp.63 = " min";
-        %tmp.64 = add %tmp.62 %tmp.63;
-        lputv %info.8 %tmp.64;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 33 12 ]
-        %tmp.65 = getm $.Toybox.System;
-        %tmp.66 = getv function %tmp.65 :println;
-        %tmp.68 = lgetv %info.8;
-        invoke %tmp.65 %tmp.66(%tmp.68);
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 35 12 ]
-        %tmp.69 = lgetv %ChooseLineMenu.4;
-        %tmp.70 = getv function %tmp.69 :addItem;
-        %tmp.74 = getv ? :MenuItem;
-        %tmp.76 = lgetv %info.8;
-        %tmp.77 = null;
-        %tmp.78 = lgetv %i.6;
-        %tmp.79 = getv function %tmp.78 :toString;
-        %tmp.80 = invoke %tmp.78 %tmp.79();
-        %tmp.81 = newd 0;
-        %tmp.71 = newc %tmp.74 (%tmp.76, %tmp.77, %tmp.80, %tmp.81);
-        invoke %tmp.69 %tmp.70(%tmp.71);
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_38_stop:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_incr:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 28 ]
+        %tmp.50 = lgetv %departure.7;
+        %tmp.51 = "name";
+        %tmp.52 = agetv %tmp.50 %tmp.51;
+        %tmp.53 = " => ";
+        %tmp.54 = add %tmp.52 %tmp.53;
+        %tmp.56 = lgetv %departure.7;
+        %tmp.57 = "direction";
+        %tmp.58 = agetv %tmp.56 %tmp.57;
+        %tmp.59 = add %tmp.54 %tmp.58;
+        %tmp.60 = " - ";
+        %tmp.61 = add %tmp.59 %tmp.60;
+        %tmp.63 = lgetv %departure.7;
+        %tmp.64 = "departs in";
+        %tmp.65 = agetv %tmp.63 %tmp.64;
+        %tmp.66 = add %tmp.61 %tmp.65;
+        %tmp.67 = " min";
+        %tmp.68 = add %tmp.66 %tmp.67;
+        lputv %info.8 %tmp.68;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 34 16 ]
+        %tmp.69 = getm $.Toybox.System;
+        %tmp.70 = getv function %tmp.69 :println;
+        %tmp.72 = lgetv %info.8;
+        invoke %tmp.69 %tmp.70(%tmp.72);
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 36 16 ]
+        %tmp.73 = lgetv %ChooseLineMenu.4;
+        %tmp.74 = getv function %tmp.73 :addItem;
+        %tmp.78 = getv ? :MenuItem;
+        %tmp.80 = lgetv %info.8;
+        %tmp.81 = null;
         %tmp.82 = lgetv %i.6;
-        %tmp.83 = 1;
-        %tmp.84 = add %tmp.82 %tmp.83;
-        lputv %i.6 %tmp.84;
-        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_test;
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_for_end:
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 45 8 ]
-        %tmp.88 = getv ? :ChooseLineMenuDelegate;
-        %tmp.85 = newc %tmp.88 ();
-        lputv %delegate.5 %tmp.85;
-[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 46 8 ]
-        %tmp.89 = getm $.Toybox.WatchUi;
-        %tmp.90 = getv function %tmp.89 :pushView;
-        %tmp.92 = lgetv %ChooseLineMenu.4;
-        %tmp.94 = lgetv %delegate.5;
-        %tmp.95 = getm $.Toybox.WatchUi;
-        %tmp.96 = getv %tmp.95 :SLIDE_UP;
-        invoke %tmp.89 %tmp.90(%tmp.92, %tmp.94, %tmp.96);
+        %tmp.83 = getv function %tmp.82 :toString;
+        %tmp.84 = invoke %tmp.82 %tmp.83();
+        %tmp.85 = newd 0;
+        %tmp.75 = newc %tmp.78 (%tmp.80, %tmp.81, %tmp.84, %tmp.85);
+        invoke %tmp.73 %tmp.74(%tmp.75);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_44_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_incr:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 29 ]
+        %tmp.86 = lgetv %i.6;
+        %tmp.87 = 1;
+        %tmp.88 = add %tmp.86 %tmp.87;
+        lputv %i.6 %tmp.88;
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_test;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_29_12_for_end:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_21_stop:
+        goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_end;
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_false:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_45_16_start:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 46 12 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_45_16_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_45_16_stop" ]
+        %message.9 = local;
+        %tmp.89 = "No departures in the near future";
+        lputv %message.9 %tmp.89;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 47 12 ]
+        %tmp.90 = lgetv %ChooseLineMenu.4;
+        %tmp.91 = getv function %tmp.90 :addItem;
+        %tmp.95 = getv ? :MenuItem;
+        %tmp.97 = lgetv %message.9;
+        %tmp.98 = null;
+        %tmp.100 = lgetv %name.1;
+        %tmp.101 = newd 0;
+        %tmp.92 = newc %tmp.95 (%tmp.97, %tmp.98, %tmp.100, %tmp.101);
+        invoke %tmp.90 %tmp.91(%tmp.92);
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_45_16_stop:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_28_8_if_end:
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 58 8 ]
+        %tmp.105 = getv ? :ChooseLineMenuDelegate;
+        %tmp.102 = newc %tmp.105 ();
+        lputv %delegate.5 %tmp.102;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\ChooseStopMenuDelegate.mc" 59 8 ]
+        %tmp.106 = getm $.Toybox.WatchUi;
+        %tmp.107 = getv function %tmp.106 :pushView;
+        %tmp.109 = lgetv %ChooseLineMenu.4;
+        %tmp.111 = lgetv %delegate.5;
+        %tmp.112 = getm $.Toybox.WatchUi;
+        %tmp.113 = getv %tmp.112 :SLIDE_UP;
+        invoke %tmp.106 %tmp.107(%tmp.109, %tmp.111, %tmp.113);
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_ChooseStopMenuDelegate_mc_17_56_stop:
     }
 }

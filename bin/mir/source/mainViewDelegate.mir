@@ -109,76 +109,83 @@ C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDel
         %tmp.20 = getv ? :positionInfo;
         %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
         lputv %closestStops.3 %tmp.21;
+[ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 38 8 ]
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_30_24_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_30_24_stop" ]
+        %size.4 = local;
+        %tmp.22 = lgetv %closestStops.3;
+        %tmp.23 = getv function %tmp.22 :size;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        lputv %size.4 %tmp.24;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 40 8 ]
         for @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_test @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_incr @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_end;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_init:
         [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_begin" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_end" ]
-        %i.4 = local;
-        %tmp.22 = 0;
-        lputv %i.4 %tmp.22;
+        %i.5 = local;
+        %tmp.26 = lgetv %size.4;
+        %tmp.27 = 1;
+        %tmp.28 = sub %tmp.26 %tmp.27;
+        lputv %i.5 %tmp.28;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_test:
-        %tmp.24 = lgetv %i.4;
-        %tmp.25 = lgetv %closestStops.3;
-        %tmp.26 = getv function %tmp.25 :size;
-        %tmp.27 = invoke %tmp.25 %tmp.26();
-        %tmp.28 = lt %tmp.24 %tmp.27;
-        bf %tmp.28 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_end;
+        %tmp.30 = lgetv %i.5;
+        %tmp.31 = 0;
+        %tmp.32 = gte %tmp.30 %tmp.31;
+        bf %tmp.32 @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_end;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_begin:
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_start:
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_start:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 41 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_stop" ]
-        %name.5 = local;
-        %tmp.30 = lgetv %closestStops.3;
-        %tmp.32 = lgetv %i.4;
-        %tmp.33 = agetv %tmp.30 %tmp.32;
-        %tmp.34 = "name";
-        %tmp.35 = agetv %tmp.33 %tmp.34;
-        lputv %name.5 %tmp.35;
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_stop" ]
+        %name.6 = local;
+        %tmp.34 = lgetv %closestStops.3;
+        %tmp.36 = lgetv %i.5;
+        %tmp.37 = agetv %tmp.34 %tmp.36;
+        %tmp.38 = "name";
+        %tmp.39 = agetv %tmp.37 %tmp.38;
+        lputv %name.6 %tmp.39;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 42 12 ]
-        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_stop" ]
-        %apiRequest.6 = local;
-        %tmp.39 = getv ? :APIrequest;
-        %tmp.41 = lgetv %name.5;
-        %tmp.36 = newc %tmp.39 (%tmp.41);
-        lputv %apiRequest.6 %tmp.36;
+        [ "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_start" "C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_stop" ]
+        %apiRequest.7 = local;
+        %tmp.43 = getv ? :APIrequest;
+        %tmp.45 = lgetv %name.6;
+        %tmp.40 = newc %tmp.43 (%tmp.45);
+        lputv %apiRequest.7 %tmp.40;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 44 12 ]
-        %tmp.42 = lgetv %ChooseStopMenu.1;
-        %tmp.43 = getv function %tmp.42 :addItem;
-        %tmp.47 = getv ? :MenuItem;
-        %tmp.49 = lgetv %name.5;
-        %tmp.50 = null;
-        %tmp.52 = lgetv %name.5;
-        %tmp.53 = newd 0;
-        %tmp.44 = newc %tmp.47 (%tmp.49, %tmp.50, %tmp.52, %tmp.53);
-        invoke %tmp.42 %tmp.43(%tmp.44);
+        %tmp.46 = lgetv %ChooseStopMenu.1;
+        %tmp.47 = getv function %tmp.46 :addItem;
+        %tmp.51 = getv ? :MenuItem;
+        %tmp.53 = lgetv %name.6;
+        %tmp.54 = null;
+        %tmp.56 = lgetv %name.6;
+        %tmp.57 = newd 0;
+        %tmp.48 = newc %tmp.51 (%tmp.53, %tmp.54, %tmp.56, %tmp.57);
+        invoke %tmp.46 %tmp.47(%tmp.48);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 52 12 ]
-        %tmp.54 = lgetv %apiRequest.6;
-        %tmp.55 = getv function %tmp.54 :makeRequest;
-        invoke %tmp.54 %tmp.55();
-C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_58_stop:
+        %tmp.58 = lgetv %apiRequest.7;
+        %tmp.59 = getv function %tmp.58 :makeRequest;
+        invoke %tmp.58 %tmp.59();
+C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_47_stop:
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_incr:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 40 ]
-        %tmp.56 = lgetv %i.4;
-        %tmp.57 = 1;
-        %tmp.58 = add %tmp.56 %tmp.57;
-        lputv %i.4 %tmp.58;
+        %tmp.60 = lgetv %i.5;
+        %tmp.61 = 1;
+        %tmp.62 = sub %tmp.60 %tmp.61;
+        lputv %i.5 %tmp.62;
         goto @C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_test;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_40_8_for_end:
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 54 8 ]
-        %tmp.62 = getv ? :ChooseStopMenuDelegate;
-        %tmp.59 = newc %tmp.62 ();
-        lputv %delegate.2 %tmp.59;
+        %tmp.66 = getv ? :ChooseStopMenuDelegate;
+        %tmp.63 = newc %tmp.66 ();
+        lputv %delegate.2 %tmp.63;
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 55 8 ]
-        %tmp.63 = getm $.Toybox.WatchUi;
-        %tmp.64 = getv function %tmp.63 :pushView;
-        %tmp.66 = lgetv %ChooseStopMenu.1;
-        %tmp.68 = lgetv %delegate.2;
-        %tmp.69 = getm $.Toybox.WatchUi;
-        %tmp.70 = getv %tmp.69 :SLIDE_UP;
-        invoke %tmp.63 %tmp.64(%tmp.66, %tmp.68, %tmp.70);
+        %tmp.67 = getm $.Toybox.WatchUi;
+        %tmp.68 = getv function %tmp.67 :pushView;
+        %tmp.70 = lgetv %ChooseStopMenu.1;
+        %tmp.72 = lgetv %delegate.2;
+        %tmp.73 = getm $.Toybox.WatchUi;
+        %tmp.74 = getv %tmp.73 :SLIDE_UP;
+        invoke %tmp.67 %tmp.68(%tmp.70, %tmp.72, %tmp.74);
 [ "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc" 56 8 ]
-        %tmp.71 = true;
-        ret %tmp.71;
+        %tmp.75 = true;
+        ret %tmp.75;
 C_Users_samue_Dokumenty_Coding_Garmin_publicTransportShortcut_source_mainViewDelegate_mc_30_24_stop:
     }
     [ @file = "C:\Users\samue\Dokumenty\Coding\Garmin\publicTransportShortcut\source\mainViewDelegate.mc"; @line = 59; ]
