@@ -65,7 +65,7 @@ class APIrequest {
             :headers => {                                           // set headers
                     //"Content-Type" => "aplication/json",
                     "accept" => "aplication/json",
-                    "x-Access-Token" => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNhbWtvLnNpdGluYTQwODhAZ21haWwuY29tIiwiaWQiOjE4MDgsIm5hbWUiOm51bGwsInN1cm5hbWUiOm51bGwsImlhdCI6MTY3ODIxNTQwNiwiZXhwIjoxMTY3ODIxNTQwNiwiaXNzIjoiZ29sZW1pbyIsImp0aSI6IjNiMGI0NGNjLTg0YTYtNDc4NC1iODVlLWMyZDFkYWZlOTJlYiJ9.HJ1AtfsJAsSsiOL3XWydKK8krh2BODWMSxj680WypcM"
+                    "x-Access-Token" => "token"
                         },
 
             :responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON  // set response type to Json
